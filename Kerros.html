@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" content="width=device-width, initial-scale=1">
+		<title>Leppävaaran Toimipiste</title>
+		
+		<link href="./KerrosStyle.css" type="text/css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<img src="Talo.jpeg" alt="Leppävaaran toimipiste">
+		<h1 class="title">Leppävaaran Toimipiste</h1>
+		<h5>Published on 22 May 2019, by Sammi</h5>
+		
+		<div class="Intro">
+			<p>Täällä sinulla on mahdollisuus tutustua työelämään erilaisten työtehtävien kautta ja selvittää omia työelämävalmiuksia.
+			Järjestämme kuntouttavaa työtoimintaa sekä työkokeilu mahdollisuuksia.</p>
+			<p>Kaikille avoin tutustumiskierros tiistaisin klo 12.30.</p>
+			<p>Leppävaaran toimipisteessä on kolme kerrosta (<i><small>klikkaa kerrosta lisätietoja varten</i></small>).</p>
+		</div>
+		
+		<div class="tab">
+			<button class="tabLinks" onclick="kerrosInfo(event, '1. Kerros')">1. Kerros</button>
+			<button class="tabLinks" onclick="kerrosInfo(event, '2. Kerros')">2. Kerros</button>
+			<button class="tabLinks" onclick="kerrosInfo(event, '3. Kerros')">3. Kerros</button>
+		</div>
+		
+		<div id="1. Kerros" class="tabContent">			
+			<img src="FirstFloor.jpg" alt="Ensi Kerros" width="900px" height="600px">
+			<h4>KOKOONPANO JA PURKU</h4>			
+			<p>
+			Ensimmäisessä kerroksessa on vastaanotto ja pakkauspaja, jossa tehdään vaihetyönä erilaisia kokoonpano-, purku-, lajittelu ja pakkaustöitä. 
+			</p>
+		</div>
+		
+		<div id="2. Kerros" class="tabContent">			
+			<img src="SecondFloor.jpg" alt="Toinen Kerros" width="900px" height="600px">
+			
+			<h4>OPETUSKEITTIÖ JA PUHTAANAPITO</h4>	
+			<p>Toisen kerroksen vasemmanpuoleisessa tilassa on:
+				<li>Keittiö</li>
+				<li>Ruokailusali</li>
+				
+				<br>
+				Valmistetaan omavalvontasuunnitelman mukaisesti kahvituksia ja lounasta. 
+				Hoidetaan puhtaanapidon ja siistimisen tehtäviä.
+			</p>
+									
+			<div class="borderContent">
+				<p><b>Ravintolan Aukioloajat:</b> (MA-PE) </p>	
+				<p>Aamupuuro</p>
+				<p>klo 09:00-09:30 (Ilmaiseksi kaikille)</p>
+				<br>
+				<p>Lounas</p>
+				<p>klo 11:00-11:30</p>
+				<p>Emme valitettavasti voi taata lounaan riittävyyttä myöhemmälle ajalle</p>
+				<br>
+				<p>Iltapäiväkahvi</p>
+				<p>klo 13:00-13:30</p>
+			</div>
+			
+			<p>Oikeanpuoleisessa tilassa on <b>TIETIXPAJA</b>:</p>
+			<li>Software/Ohjelmisto: Harjoitellaan mm. koodausta, internetsivujen tekemistä ja 3D-mallinnusta. 
+			Ohjelmointi: Python, Javascript, HTML5, CSS, MongoDB, GIT, jne.</li>
+			<li>Hardware/Laitteisto: Tietokoneiden korjaus, Linux-käyttöjärjestelmän asennus korjattuihin koneisiin. Tietokoneet luovutetaan niitä tarvitseville sosiaalitoimen asiakkaille.</li>
+
+		</div>
+		
+		<div id="3. Kerros" class="tabContent">			
+			<img src="ThirdFloor.jpg" alt="Kolmas Kerros" width="900px" height="600px">
+			<p>
+			Kerroksessa on monta huonetta, joita ei käytetä pajatoimintaan.
+			</p>
+		</div>
+		
+		<script>
+			function kerrosInfo(evt, kerrosNo) {
+								
+				var i, tabContent, tabLinks;
+				
+				tabContent = document.getElementsByClassName("tabContent");
+				
+				for (i = 0; i < tabContent.length; i++) {
+					tabContent[i].style.display = "none";
+				}
+  
+				tabLinks = document.getElementsByClassName("tabLinks");
+				for (i = 0; i < tabLinks.length; i++) {
+					tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+				}
+				
+				document.getElementById(kerrosNo).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+		
+	</body>
+</html>
