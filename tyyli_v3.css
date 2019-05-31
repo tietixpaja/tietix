@@ -213,9 +213,16 @@ filter: sepia(100%);
     width: 100%;
     z-index: -1;
 }
-.SecretCode {background-image: url('P1130926-2.jpg');}
+
 .FlexMe {
     display:flex;
     justify-content: center;
-    background-color: #73AD21;
+    margin:-8px;
+    background-color: #73AD21;    
 }
+#Pic1 {
+    background-image: url("Files/P1130926-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#textHere {width:30%;}
