@@ -1,147 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Tietix</title>
-</head>
-
-
-
-    <link rel="stylesheet" type="text/css" href="tyyli_v3.css">
-
-    <title>Oma Sivu</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-
-	$(document).ready(function(){
-
-		var c = true;
-		//var color = $( "#panel" ).css( "opacity", "0.8" );
-
-		var sepiaValue = 100;
-
-
-
-		$("#flip").mouseenter(function() {
-
-			$("#panel").stop().slideDown("slow");
-
-			$({ sepiaValue: sepiaValue }).animate(
-				{ sepiaValue: 0 },
-				{
-					duration: "slow",
-					step: function() {
-						var sepia = "sepia(" + this.sepiaValue + "%)";
-						sepiaValue = this.sepiaValue;
-						$( ".tausta" ).css({
-							"filter": sepia,
-							"-webkit-filter": sepia
-						});
-					}
-				}
-			);
-
-         });
-
-
-		$("#flip").mouseleave(function() {
-
-			$("#panel").stop().slideUp("slow");
-
-			$({ sepiaValue: sepiaValue }).animate(
-				{ sepiaValue: 100 },
-				{
-					duration: "slow",
-					step: function() {
-						var sepia = "sepia(" + this.sepiaValue + "%)";
-						sepiaValue = this.sepiaValue;
-						$( ".tausta" ).css({
-							"filter": sepia,
-							"-webkit-filter": sepia
-						});
-					}
-				}
-			);
-
-		});
-	});
-	</script>
-
-	<style>
-	#panel, #flip {
-
-		text-align: center;
-		background-color: #000000;
-		//filter:             invert(80%);
-		opacity:            0.60;
-
-	}
-
-	#flip, .kuva{
-
-		position:relative;
-		display:table;
-
-		padding: 5px;
-
-
-		margin-left: auto;
-		margin-right: auto;
-		width: 25%;
-	}
-
-	#panel{
-		/*padding: 10px;*/
-
-
-		/*margin-left: auto;
-		margin-right: auto;*/
-		/*width: 25%;*/
-
-	}
-
-	.tausta{
-    filter: sepia(100%);
-		position:absolute;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		z-index: -1;
-	}
-
-	</style>
-</head>
-
-
-
-
+	<head>
+		<title>Tietix</title>
+		<link rel="stylesheet" type="text/css" href="tyyli_v3.css">		
+		<script type="text/javascript" src="SepiaEffect.js"></script>
+	</head>
 <body>
+	<div class="addFlex">
+		<h1>Tietixpaja</h1>
+		<p>Tämä kotisivuprojekti alkoi 20.5.2019 :)</p>
+	</div>
 
-<h1>Tietixpaja</h1>
-<p>Tämä kotisivuprojekti alkoi 20.5.2019 :)</p>
-<p>Tehkää muutos tai lisäys sivulle ja merkitkää commit -m "omanimi ja mikä muutos oli"</p>
-<p id="ohjelmointi">
-	<a href="Tietix-pajalaisten_töitä.html">Tietix-pajalaisten töitä</a>
-</p>
+		<div>
+			<img class="tausta" src="P1130922-2.jpg" alt="">
 
-<div>
-	<img class="tausta" src="P1130922-2.jpg" alt="">
-    <img class="kuva" src="https://hsto.org/getpro/geektimes/post_images/464/791/adf/464791adfc0937078812e86336452d2b.jpg">
-
-
-		<div id="flip">
-
-			<h1 id="tul">TIETIX</h1>
-
-			<div id="panel">
-				<p id="ohjelmointi" onclick="redd()"><a href="Tietix-pajalaisten_töitä.html">Ohjelmointia</a></p>
-				<p id="Tieteellinen laskenta" onclick="redd()"><a href="Tietix-pajalaisten_töitä.html">Tieteellistä laskentaa</a></p>
-				<p id="Tietokoneen kunnostus" onclick="lastP2()"><a href="Tietokoneen kunnostus.html">Tietokoneen kunnostus</a></p>
-			</div>
+				<div class="MyBox">
+					<div class="RantalaText">
+						<h1>Rantala</h1>
+						<p class="TOC">TOC</p>
+					</div>
+				</div>
+							
+				<div id="flip">
+					<h1 id="tul">TIETIX</h1>
+					<div id="panel">
+						<a href="Tietix-pajalaisten_töitä.html">Ohjelmointia</a>
+						<a href="Tietix-pajalaisten_töitä.html">Tieteellistä laskentaa</a>
+						<a href="Tietokoneen kunnostus.html">Tietokoneen kunnostus</a>
+						<a href="Tietix-pajalaisten_töitä.html">Tietix-pajalaisten töitä</a>
+					</div>
+				</div>
 		</div>
-
-</div>
-
-
-
-</body>
+	</body>
 </html>
