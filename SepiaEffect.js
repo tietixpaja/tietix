@@ -61,7 +61,6 @@
 		$('#flip').hover(function(){
 			$(".MyBox").addClass("MyBox2")
 		},function(){
-			$(".MyBox").removeClass('MyBox2') }
-	)
+			$(".MyBox").removeClass('MyBox2') 
+		})
 	});
-	
