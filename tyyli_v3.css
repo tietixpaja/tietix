@@ -59,8 +59,7 @@ body {
 */
 
 .text{
-    position: absolute;
-    float: right;
+    position: absolute;  
     clear: right;
     display: inline-block;
 }
@@ -226,4 +225,8 @@ filter: sepia(100%);
     height: 10%;
     width: 10%;
 }
-#textHere {width:30%;}
+#textHere {
+    width:30%;
+    background-color: black;
+    border-radius: 30px;
+}
