@@ -217,12 +217,13 @@ filter: sepia(100%);
 .FlexMe {
     display:flex;
     justify-content: center;
-    margin:-8px;
-    background-color: #73AD21;    
+    margin:-8px;   
 }
 #Pic1 {
     background-image: url("Files/P1130926-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 10%;
+    width: 10%;
 }
 #textHere {width:30%;}
