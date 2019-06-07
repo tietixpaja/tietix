@@ -122,7 +122,9 @@ h2 {
 .RantalaText p {font-size: 2em;}
 .ShowMe {opacity:1;}
 
-.MyBox{       
+.MyBox{      
+    position: relative;
+    top:300px;
     display: table;
     margin: 0 auto;   
     width:30%;
@@ -227,7 +229,7 @@ select {width: 100px; font-size: 15px;}
     position:absolute;    
     left:0%;
     width:30%;
-    height: 35%;
+    height: 40%;
     background-color: #73725A;
     color:white;
     font-size: 18px;  
@@ -240,7 +242,7 @@ select {width: 100px; font-size: 15px;}
     position:absolute;    
     right:0%;
     width:30%;
-    height: 35%;
+    height: 40%;
     font-size: 18px;
     background-color: #73725A;
     color:white;
@@ -271,8 +273,7 @@ select {width: 100px; font-size: 15px;}
     justify-content: center;
     width: 90%;   
     height:70%;   
-
-.tausta:hover  {
-    opacity: 1;
-    transition: .8s ease;
 }
+
+.tausta:hover  {opacity: 1;transition: .8s ease;}
+#Special {display: inline;color:#D7D152;}
