@@ -62,10 +62,12 @@
 			$(".MyBox").addClass("MyBox2")
 			$(".InfoBox1").addClass("InfoBoxAddColor")
 			$(".InfoBox2").addClass("InfoBoxAddColor")
+			$(".InfoBox2V2").addClass("InfoBoxAddColor")
 		},function(){
 			$(".MyBox").removeClass('MyBox2') 
 			$(".InfoBox1").removeClass("InfoBoxAddColor")
 			$(".InfoBox2").removeClass("InfoBoxAddColor")
+			$(".InfoBox2V2").removeClass("InfoBoxAddColor")
 		})
 	});
 
@@ -73,6 +75,7 @@
 		$("#Special").click(function(){
 			$("#KyselyLomake").show(1200);
 			$("#Close-Iframe").show(1200);
+			$("#flip").hide(1200);
 			$(".InfoBox1, .InfoBox2, .tausta").css('opacity', '0.2');
 		});
 	});
@@ -81,6 +84,24 @@
 		$("#Close-Iframe").click(function(){
 			$("#KyselyLomake").hide(1200);
 			$("#Close-Iframe").hide();
+			$(".InfoBox1, .InfoBox2, .tausta").css('opacity', '1');	
+			$("#flip").show();
+		});
+	});
+
+	$(document).ready(function(){
+		$("#TietokoneLomake").click(function(){
+			$("#LuovutusLomake").show(1200);
+			$("#Close-Iframe-Lomake").show(1200);
+			$("#flip").hide(1200);
+			$(".InfoBox1, .InfoBox2, .tausta").css('opacity', '0.2');
+		});
+	});
+	$(document).ready(function(){
+		$("#Close-Iframe-Lomake").click(function(){
+			$("#LuovutusLomake").hide(1200);
+			$("#Close-Iframe-Lomake").hide();
 			$(".InfoBox1, .InfoBox2, .tausta").css('opacity', '1');
+			$("#flip").show();
 		});
 	});

@@ -61,42 +61,43 @@
 				</div>          
 			 </div>    
  
-			 <div class="InfoBox2">
-				   <h1 id="FontH1">Tulossa</h1>               
+			 <div class="InfoBox2V2">
+				   <h1 id="FontH1">Oppimateriaali</h1>               
 				   <hr class="line">            
-					<div id="BoxInsideDiv1">            
-						<p id="demo"></p>							
-					</div>			                      
-			 </div>  	
-			 <script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("Jun 17, 2019 7:15:00").getTime();
-				
-				// Update the count down every 1 second
-				var x = setInterval(function() {
-				
-				  // Get today's date and time
-				  var now = new Date().getTime();
-					
-				  // Find the distance between now and the count down date
-				  var distance = countDownDate - now;
-					
-				  // Time calculations for days, hours, minutes and seconds
-				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-					
-				  // Output the result in an element with id="demo"
-				  document.getElementById("demo").innerHTML = "Mika palaa lomalta: " + days + "d " + hours + "h "
-				  + minutes + "m " + seconds + "s ";
-					
-				  // If the count down is over, write some text 
-				  if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("demo").innerHTML = "EXPIRED";
-				  }
-				}, 1000);
-				</script>
+					<div id="BoxInsideDiv1">   
+						
+					<p class="b">HTML</p>							
+						<ul class="a">
+						<li><a href="https://www.w3schools.com/html/default.asp" target="blank">W3Schools</a></li>
+						<li><a href="http://salakapakka.net/oppaat/html-ja-css-opas/" target="blank">Salakapakka</a></li>
+					</ul>
+
+					<p class="b">CSS ja FlexBox</p>	
+						<ul class="a">
+							<li><a href="https://www.w3schools.com/css/default.asp" target="blank">W3Schools</a></li>
+							<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank">CSS-Tricks</a></li>
+						</ul>
+
+					<p class="b">Javascript</p>	
+						<ul class="a">
+							<li><a href="https://www.w3schools.com/js/default.asp" target="blank">W3Schools</a></li>
+							<li><a href="https://javascript.info/" target="blank">Javascript (info)</a></li>					
+						</ul>	
+
+					<p class="b">Python</p>					
+						<ul class="a">
+							<li><a href="https://realpython.com/" target="blank">Real Python</a></li>	
+							<li><a href="https://www.codecademy.com/learn/learn-python" target="blank">Codecademy</a></li>				
+						</ul>				
+					</div>	
+						
+					<p class="b">Ohjelmoiti pelit</p>	     
+						<ul class="a">
+							<li><a href="https://codecombat.com/" target="blank">CodeCombat</a></li>	
+							<li><a href="https://flexboxfroggy.com/" target="blank">Flexbox Froggy</a></li>
+							<li><a href="http://www.flexboxdefense.com/" target="blank">Flexbox Defence</a></li>
+							<li><a href="https://cssgridgarden.com/" target="blank">CSS Grid Garden</a></li>
+						</ul>                 
+			 </div>  				
 	</body>
 </html>

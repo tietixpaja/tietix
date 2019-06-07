@@ -233,7 +233,7 @@ select {width: 100px; font-size: 15px;}
     background-color: #73725A;
     color:white;
     font-size: 18px;  
-    transition: 2s ease;
+    transition: 0.8s ease;
 }
 .InfoBox2{
     display: flex;
@@ -246,12 +246,26 @@ select {width: 100px; font-size: 15px;}
     font-size: 18px;
     background-color: #73725A;
     color:white;
-    transition: 2s ease;
+    transition: 0.8s ease;
+}
+.InfoBox2V2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;    
+    right:0%;
+    width:30%;
+    height: 80%;
+    font-size: 18px;
+    background-color: #73725A;
+    color:white;
+    transition: 0.8s ease;
 }
 .InfoBoxAddColor {background-color:#323119;}
 .InfoBox1:hover{background-color:#323119;}
 .InfoBox2:hover{background-color:#323119;}
-.CMe1 {color: #E3DF93;}
+.InfoBox2V2:hover{background-color:#323119;}
+
 .line {width:100%;color:white;}
 .b {font-weight: bold;}
 
@@ -277,6 +291,9 @@ select {width: 100px; font-size: 15px;}
 
 .tausta:hover  {opacity: 1;transition: .8s ease;}
 #Special {display: inline;color:#D7D152;}
+#TietokoneLomake {display: inline;color:#D7D152;}
+ul.a {color:#D7D152;}
+li.b {color:#D7D152;}
 #KyselyLomake{
     position:fixed;
     display: none;
@@ -284,6 +301,14 @@ select {width: 100px; font-size: 15px;}
     width:40%;
     height:90%;
 }
+#LuovutusLomake{
+    position:fixed;
+    display: none;
+    top:8%;
+    width:40%;
+    height:90%;
+}
+
 #Close-Iframe {
     position:fixed;
     display: none;
@@ -297,7 +322,17 @@ select {width: 100px; font-size: 15px;}
     color:white;
     font-size: 2em;
 }
-#FullScreen {
-    height: 100%;
-    width: 100%;
+#Close-Iframe-Lomake{
+    position:fixed;
+    display: none;
+    left:64%;
+    top:8.5%;
+    width:5%;
+    height:4%;
+    border:none; 
+    border-radius: 20px;
+    background-color: red;
+    color:white;
+    font-size: 2em;
 }
+#FullScreen {height: 100%;width: 100%;}
