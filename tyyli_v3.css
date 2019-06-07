@@ -168,13 +168,7 @@ a:hover {
 #li {display: none;}
 select {width: 100px; font-size: 15px;}
 
-
-.tausta:hover  {   
-    opacity: 1;
-    transition: .8s ease;
-}
 #panel, #flip {
-
     text-align: center;
     background-color: black;
     /*filter: invert(80%);*/
@@ -211,7 +205,7 @@ select {width: 100px; font-size: 15px;}
 .FlexMe {
     display:flex;
     justify-content: center;
-    margin:-8px;   
+    margin-left:-8px;   
 }
 #Pic1 {
     background-image: url("Files/P1130926-2.jpg");
@@ -225,7 +219,7 @@ select {width: 100px; font-size: 15px;}
     background-color: black;
     border-radius: 30px;
 }
-#InfoBox1{
+.InfoBox1{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -233,11 +227,12 @@ select {width: 100px; font-size: 15px;}
     left:0%;
     width:30%;
     height: 35%;
-    background-color: #4A4A4A;
+    background-color: #73725A;
     color:white;
-    font-size: 18px;
+    font-size: 18px;  
+    transition: 2s ease;
 }
-#InfoBox2{
+.InfoBox2{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -246,16 +241,19 @@ select {width: 100px; font-size: 15px;}
     width:30%;
     height: 35%;
     font-size: 18px;
-    background-color: #4A4A4A;
+    background-color: #73725A;
     color:white;
+    transition: 2s ease;
 }
-#FontH1 {
-    font-size: 25px;
-}
+.InfoBoxAddColor {background-color:#323119;}
+.InfoBox1:hover{background-color:#323119;}
+.InfoBox2:hover{background-color:#323119;}
+.CMe1 {color: #E3DF93;}
 .line {width:100%;color:white;}
-.b {
-    font-weight: bold;
-}
+.b {font-weight: bold;}
+
+#FontH1 {font-size: 25px;}
+
 #textHere {
     display:flex;
     align-items: center;
@@ -264,4 +262,12 @@ select {width: 100px; font-size: 15px;}
     width:17%;
     position:absolute;
     left:0.5%;
+}
+#BoxInsideDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;   
+    height:70%;   
 }

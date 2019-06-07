@@ -60,7 +60,11 @@
 	$(document).ready(function(){
 		$('#flip').hover(function(){
 			$(".MyBox").addClass("MyBox2")
+			$(".InfoBox1").addClass("InfoBoxAddColor")
+			$(".InfoBox2").addClass("InfoBoxAddColor")
 		},function(){
 			$(".MyBox").removeClass('MyBox2') 
+			$(".InfoBox1").removeClass("InfoBoxAddColor")
+			$(".InfoBox2").removeClass("InfoBoxAddColor")
 		})
 	});
