@@ -277,3 +277,27 @@ select {width: 100px; font-size: 15px;}
 
 .tausta:hover  {opacity: 1;transition: .8s ease;}
 #Special {display: inline;color:#D7D152;}
+#KyselyLomake{
+    position:fixed;
+    display: none;
+    top:8%;
+    width:40%;
+    height:90%;
+}
+#Close-Iframe {
+    position:fixed;
+    display: none;
+    left:64%;
+    top:8.5%;
+    width:5%;
+    height:4%;
+    border:none; 
+    border-radius: 20px;
+    background-color: red;
+    color:white;
+    font-size: 2em;
+}
+#FullScreen {
+    height: 100%;
+    width: 100%;
+}

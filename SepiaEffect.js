@@ -68,3 +68,19 @@
 			$(".InfoBox2").removeClass("InfoBoxAddColor")
 		})
 	});
+
+	$(document).ready(function(){
+		$("#Special").click(function(){
+			$("#KyselyLomake").show(1200);
+			$("#Close-Iframe").show(1200);
+			$(".InfoBox1, .InfoBox2, .tausta").css('opacity', '0.2');
+		});
+	});
+
+	$(document).ready(function(){
+		$("#Close-Iframe").click(function(){
+			$("#KyselyLomake").hide(1200);
+			$("#Close-Iframe").hide();
+			$(".InfoBox1, .InfoBox2, .tausta").css('opacity', '1');
+		});
+	});
