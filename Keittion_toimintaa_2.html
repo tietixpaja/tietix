@@ -6,7 +6,7 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="tyyli_v3.css">
+    <link rel="stylesheet" type="text/css" href="tyyli_v3_1.css">
 
     <title>Oma Sivu</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -66,7 +66,7 @@
 	});
 	</script>
 
-	<style>
+<style> 
 	#panel, #flip {
 
 		text-align: center;
@@ -75,11 +75,10 @@
 		opacity:            0.60;
 
 	}
-
+	
 	#flip, .kuva{
 
-		position:absolute;
-<!--		position:relative; -->
+		position:relative;
 		display:table;
 
 		padding: 5px;
@@ -108,42 +107,65 @@
 		width: 100%;
 		z-index: -1;
 	}
+	
+	#dropdown {
+	position: relative;
+	display: inline-block;
+	}
+	
+	#dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 18px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	height: 250px;
+	width: 250px;
+	}
+	
+	#dropdown:hover #dropdown-content {
+	display: block;
+	}
 
-	</style>
+
+</style>
 </head>
-
-
-
 
 <body>
 
-<h1>Tietixpaja</h1>
-<p>Tämä kotisivuprojekti alkoi 20.5.2019 :)</p>
-<p>Tehkää muutos tai lisäys sivulle ja merkitkää commit -m "omanimi ja mikä muutos oli"</p>
-<!-- <p id="ohjelmointi">
-	<a href="Tietix-pajalaisten_töitä.html">Tietix-pajalaisten töitä</a>
-</p> -->
+<div id="sideNav">
+
+<ul>
+	<li><a href="index.html">Pääsivu</a></li>
+</ul>
+</div>
+
+<h1>Keittiö</h1>
 
 <div>
-	<img class="tausta" src="P1130922-2.jpg" alt="">
-<!--    <img class="kuva" src="https://hsto.org/getpro/geektimes/post_images/464/791/adf/464791adfc0937078812e86336452d2b.jpg"> -->
-
+	<img class="tausta" src="P1130936-1.jpg" alt="">
 
 		<div id="flip">
 
-			<h1 id="tul">pajan toimintaa</h1>
+			<h1 id="tul">Ruokalista</h1>
 
 			<div id="panel">
-				<p id="ohjelmointi" onclick="redd()"><a href="Tietix-pajalaisten_töitä.html">Ohjelmointia</a></p>
-				<p id="Tieteellinen laskenta" onclick="redd()"><a href="Tietix-pajalaisten_töitä.html">Tieteellistä laskentaa</a></p>
-				<p id="Keittiön toimintaa" onclick="redd()"><a href="Keittion_toimintaa.html">Keittiön toimintaa</a></p>
-				<p id="Tietokoneen kunnostusta" onclick="lastP2()"><a href="Tietokoneen kunnostus.html">Tietokoneen kunnostusta</a></p>
+				<div id="dropdown">
+					<p>Aukioloajat</p>
+					<div id="dropdown-content">
+					<a href="Aukioloajat.txt"></a>
+					</div>
+					<p>Ruokalista</p>
+					<div id="dropdown-content">
+					<a href="Ruokalista.html"</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
 </div>
 
-
-
 </body>
+
 </html>
