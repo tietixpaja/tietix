@@ -12,21 +12,6 @@ body {
     opacity: 0.5;
     transition: .8s ease;
 }*/
-
-.otsikko {
-    text-align: center;
-    letter-spacing: 3px;
-    cursor:pointer;
-}
-.dropdown {
-    margin-top: 10%;
-    margin-left: 25%;
-    position: relative;
-    display: inline-block;
-    cursor:pointer;
-    text-align: center;
-    background: #4A4A4A;
-}
 /*
 #panel, #flip {
     padding: 5px;
@@ -37,18 +22,6 @@ body {
 
 #panel {padding: 30px;display: none;}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    cursor:pointer;
-    color: black;
-    
-}
 /*
 .dropdown:hover .dropdown-content {
     display: block;
@@ -73,32 +46,8 @@ h2 {
     padding-top: 5%;
     text-align: center;
 }
-.yksi {
-    margin-left: 30%;
-    margin-right: 30%;
-    display: inline-block;
-}
-.nnn {
-    width: 401px;
-    height: 500px;
-    float: left;
-    margin-right: 20px;
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 2%;
-}
-.header {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 1.25;
-    background-color: #fff;
-    width: 100%;
-    min-width: 100%;
-    font-weight: 900;
-    cursor:pointer;
-  }
+
 .header li {display: inline-block;}
-.peli {display: none;}
 
 .addFlex {
     display: flex;
@@ -184,7 +133,8 @@ select {width: 100px; font-size: 15px;}
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;   
+    width: 25%;  
+    border-radius: 0px 0px 20px 20px;
 }
 
 
@@ -202,7 +152,7 @@ select {width: 100px; font-size: 15px;}
     position:absolute;
     margin-left:-8px;
     width: 100%;
-    z-index: -1;
+    z-index: -1;    
 }
 
 .FlexMe {
@@ -234,6 +184,7 @@ select {width: 100px; font-size: 15px;}
     color:white;
     font-size: 18px;  
     transition: 0.8s ease;
+    border-radius: 0px 0px 30px 0px;
 }
 .InfoBox2{
     display: flex;
@@ -247,6 +198,7 @@ select {width: 100px; font-size: 15px;}
     background-color: #73725A;
     color:white;
     transition: 0.8s ease;
+    border-radius: 0px 0px 0px 30px;
 }
 .InfoBox2V2{
     display: flex;
@@ -260,6 +212,7 @@ select {width: 100px; font-size: 15px;}
     background-color: #73725A;
     color:white;
     transition: 0.8s ease;
+    border-radius: 0px 0px 0px 30px;
 }
 .InfoBoxAddColor {background-color:#323119;}
 .InfoBox1:hover{background-color:#323119;}
@@ -268,7 +221,6 @@ select {width: 100px; font-size: 15px;}
 
 .line {width:100%;color:white;}
 .b {font-weight: bold;}
-
 #FontH1 {font-size: 25px;}
 
 #textHere {
@@ -294,6 +246,7 @@ select {width: 100px; font-size: 15px;}
 #TietokoneLomake {display: inline;color:#D7D152;}
 ul.a {color:#D7D152;}
 li.b {color:#D7D152;}
+
 #KyselyLomake{
     position:fixed;
     display: none;
@@ -336,3 +289,7 @@ li.b {color:#D7D152;}
     font-size: 2em;
 }
 #FullScreen {height: 100%;width: 100%;}
+#Valikoima-Boksi {    
+    width:100%;
+    height:100%;
+}
