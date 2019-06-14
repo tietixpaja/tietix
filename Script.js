@@ -111,11 +111,11 @@
 		$('.Valikoima').hover(function(){	
 			$(".Hidden1").addClass("Hidden-Style");				
 			$('.InfoBox2V3').addClass('GiveMoreHeight');
-			$(".Hidden1").show(300);				
-		},function(){
-			$(".Hidden1").removeClass("Hidden-Style");	
-			$(".InfoBox2V3").removeClass("GiveMoreHeight");
-			$(".Hidden1").hide();		
-		})
-	});		
-	
+			$(".Hidden1").show(300);
+		});
+		$('.InfoBox2V3').mouseleave(function(){	
+			$(".Hidden1").removeClass("Hidden-Style");				
+			$('.InfoBox2V3').removeClass('GiveMoreHeight');
+			$(".Hidden1").hide(0);
+		});
+	});
