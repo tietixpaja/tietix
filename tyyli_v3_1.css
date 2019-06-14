@@ -18,7 +18,7 @@ body {
     letter-spacing: 3px;
     cursor:pointer;
 }
-/*
+
 .dropdown {
     margin-top: 10%;
     margin-left: 25%;
@@ -28,7 +28,7 @@ body {
     text-align: center;
     background: #4A4A4A;
 }
-*/
+
 /*
 #panel, #flip {
     padding: 5px;
@@ -39,7 +39,7 @@ body {
 
 #panel {
     padding: 50px;
-    display: none;
+    display: none;    
 }
 
 .dropdown-content {
@@ -52,6 +52,7 @@ body {
     z-index: 1;
     cursor:pointer;
     color: black;
+ 
     
 }
 /*
@@ -61,8 +62,7 @@ body {
 */
 
 .text{
-    position: absolute;
-    float: right;
+    position: absolute; 
     clear: right;
     display: inline-block;
 }
@@ -71,8 +71,7 @@ body {
     margin-right: 5%;
     display: inline;
 }
- #tul {
-    margin-top: 20%;
+ #tul {   
      margin-left: 5%;
      display: inline;
 }
@@ -116,12 +115,9 @@ h1 {
     display: none;
 }
 a:hover {
-    //color:red;
     color:orange;
-    font-size: 16px;
+    font-size: 26px;
     padding: 0px, 0px;
-    //font-size: 19px;
-    //padding: 20px 25px;
 }
 @media screen and (max-width: 800px) {
     body {
@@ -143,4 +139,59 @@ select {
 .tausta:hover  {
     opacity: 1;
     transition: .8s ease;
+}
+#FlexBox{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    font-size: 24px;
+
+}
+#Hidden1 {
+    border:1px solid yellow;
+    width:300px;
+    position:absolute;
+    top:120px;
+    background-color: black;
+    color:white;
+    left:61%;   
+    display:none;
+
+}
+#Hidden2 {
+    border:1px solid yellow;
+    width:300px;
+    position:absolute;
+    top:120px;
+    background-color: black;
+    color:white;
+    left:61%;   
+    display:none;
+
+}
+#Hidden3 {
+    border:1px solid yellow;
+    width:300px;
+    position:absolute;
+    top:120px;
+    background-color: black;
+    color:white;
+    left:61%;   
+    display:none;
+
+}
+#ColorWhite{
+    color:white;
+}
+.ImgHeiWi{
+    width: 50px ;
+    height: 50px;
+}
+.ImgHeiWiV2{    
+    width: 300px ;
+    height: 220px;
+}
+.style1 {
+    height: 280px;
+    color:white;
 }

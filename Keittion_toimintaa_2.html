@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="tyyli_v3_1.css">	
+	<link rel="stylesheet" type="text/css" href="test.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <title>Tietix</title>
-</head>
-
-
-
-    <link rel="stylesheet" type="text/css" href="tyyli_v3_1.css">
-
+	
     <title>Oma Sivu</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
 	<script>
 
 	$(document).ready(function(){
@@ -71,8 +69,7 @@
 
 		text-align: center;
 		background-color: #000000;
-		//filter:             invert(80%);
-		opacity:            0.60;
+		opacity:   0.60;
 
 	}
 	
@@ -88,16 +85,17 @@
 		margin-right: auto;
 		width: 20%;
 	}
-
+/*
 	#panel{
 		
 		/*padding: 10px;*/
 
 		/*margin-left: auto;
 		margin-right: auto;*/
-		/*width: 25%;*/
+		/*width: 25%;
 
 	}
+	*/
 
 	.tausta{
     filter: sepia(100%);
@@ -149,20 +147,89 @@
 		<div id="flip">
 
 			<h1 id="tul">Ruokalista</h1>
-
-			<div id="panel">
-				<div id="dropdown">
+<!--
+	<div id="dropdown">
 					<p>Aukioloajat</p>
 					<div id="dropdown-content">
 					<a href="Aukioloajat.txt"></a>
 					</div>
 					<p>Ruokalista</p>
 					<div id="dropdown-content">
-					<a href="Ruokalista.html"</a>
+					<a href="Ruokalista.html"></a>
 					</div>
 				</div>
+-->
+<!--
+			<div id="panel">
+				<div id="FlexBox">
+						<a class="test1">Test 1</a>
+							<lu id="Hidden1">
+								<li>fgdf</li>
+								<li>fgdf</li>
+								<li>fgdf</li>
+								<li>fgdf</li>
+							</lu>
+						<a class="test2">Test 2</a>
+							<lu id="Hidden2">
+									<li>a</li>
+									<li>a</li>
+									<li>a</li>
+									<li>a</li>
+							</lu>
+						<a class="test3">Test 3</a>
+							<lu id="Hidden3">
+									<li>b</li>
+									<li>b</li>
+									<li>fgdf</li>
+									<li>fgdf</li>
+							</lu>
+				</div>				
 			</div>
-		</div>
+			-->
+			<div id="panel">
+					<div id="FlexBox">
+							<a class="test1">Viikko 1</a>							
+							<a class="test2">Viikko 2</a>								
+							<a class="test3">Viikko 3</a>							
+					
+					</div>				
+				</div>
+			</div>
+			<div id="Hidden1">
+				<img class="ImgHeiWiV2" src="https://images.ctfassets.net/nwbqij9m1jag/4Q0XkBQ0Pm6iQAYQG6GyKk/6feca6c0c318da77cb3d3ae93ef6c662/swedish-dishes-meatballs-nordic-choice-hotels.jpg?q=80&w=765&h=458&fit=fill&f=faces">
+				<iframe class="style1" src="Ruokalista.html"></iframe>		
+			</div>
+			<div id="Hidden2">
+				<img class="ImgHeiWiV2" src="https://im.mtv.fi/image/6509224/landscape16_9/1024/576/9026a95e537c2b8bb11ad8462a61bcd0/NF/rendang.jpg">												
+				<iframe class="style1" src="Ruokalista.html"></iframe>		
+			</div>
+			<div id="Hidden3">
+				<img class="ImgHeiWiV2" src="https://thumbs.dreamstime.com/z/typical-swedish-meatballs-potatoes-wild-berries-cocumbe-popular-recipe-served-boiled-gherkins-lingonberry-jam-56305800.jpg">												
+				<iframe class="style1" src="Ruokalista.html"></iframe>		
+			</div>
+		<script>
+			$(document).ready(function(){
+				$('.test1').hover(function(){		
+					$("#Hidden1").show(400);					
+				},function(){
+					$("#Hidden1").hide(400);	
+				})
+			});		
+			$(document).ready(function(){
+				$('.test2').hover(function(){		
+					$("#Hidden2").show(400);					
+				},function(){
+					$("#Hidden2").hide(400);	
+				})
+			});		
+			$(document).ready(function(){
+				$('.test3').hover(function(){		
+					$("#Hidden3").show(400);					
+				},function(){
+					$("#Hidden3").hide(400);	
+				})
+			});						
+		</script>
 
 </div>
 
