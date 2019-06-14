@@ -20,7 +20,6 @@ body {
     border: solid 1px #c3c3c3;
 }*/
 
-#panel {padding: 30px;display: none;}
 
 /*
 .dropdown:hover .dropdown-content {
@@ -214,14 +213,21 @@ select {width: 100px; font-size: 15px;}
     transition: 0.8s ease;
     border-radius: 0px 0px 0px 30px;
 }
-.InfoBoxAddColor {background-color:#323119;}
-.InfoBox1:hover{background-color:#323119;}
-.InfoBox2:hover{background-color:#323119;}
-.InfoBox2V2:hover{background-color:#323119;}
+.InfoBox2V3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;    
+    right:0%;
+    width:30%;
+    height: 62%;
+    font-size: 18px;
+    background-color: #73725A;
+    color:white;
+    transition: 0.8s ease;
+    border-radius: 0px 0px 0px 30px;
+}
 
-.line {width:100%;color:white;}
-.b {font-weight: bold;}
-#FontH1 {font-size: 25px;}
 
 #textHere {
     display:flex;
@@ -240,12 +246,15 @@ select {width: 100px; font-size: 15px;}
     width: 90%;   
     height:70%;   
 }
+#BoxInsideDiv1V2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;   
+    height:70%;   
+}
 
-.tausta:hover  {opacity: 1;transition: .8s ease;}
-#Special {display: inline;color:#D7D152;}
-#TietokoneLomake {display: inline;color:#D7D152;}
-ul.a {color:#D7D152;}
-li.b {color:#D7D152;}
 
 #KyselyLomake{
     position:fixed;
@@ -288,8 +297,35 @@ li.b {color:#D7D152;}
     color:white;
     font-size: 2em;
 }
+ul.a {color:#D7D152;}
+li.b {color:#D7D152;}
+
 #FullScreen {height: 100%;width: 100%;}
-#Valikoima-Boksi {    
-    width:100%;
-    height:100%;
+#Valikoima-Boksi {width:100%;height:100%;}
+#FontH1 {font-size: 25px;}
+#Special {display: inline;color:#D7D152;}
+#TietokoneLomake {display: inline;color:#D7D152;}
+#panel {padding: 30px;display: none;}
+
+.b {font-weight: bold;}
+.line {width:100%;color:white;}
+.tausta:hover  {opacity: 1;transition: .8s ease;}
+.ImgHeiWi   {width:50px;height:50px;}
+.ImgHeiWiV2 {width:300px;height:220px;}
+.style1     {height:280px;color:white;border:none;}
+.InfoBoxAddColor {background-color:#323119;}
+.InfoBox1:hover{background-color:#323119;}
+.InfoBox2:hover{background-color:#323119;}
+.InfoBox2V2:hover{background-color:#323119;}
+.Hidden1{display:none;}
+
+.Hidden-Style {
+    position:absolute;  
+    width:53%;
+    top:120px;
+    background-color: black;
+    color:white;
+    left:25%;   
+    display:none;
+    border:1px solid rgb(87, 179, 196);
 }
