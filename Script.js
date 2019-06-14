@@ -116,6 +116,6 @@
 		$('.InfoBox2V3').mouseleave(function(){	
 			$(".Hidden1").removeClass("Hidden-Style");				
 			$('.InfoBox2V3').removeClass('GiveMoreHeight');
-			$(".Hidden1").hide(0);
+			$(".Hidden1").hide(600);
 		});
 	});
