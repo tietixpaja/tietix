@@ -63,11 +63,13 @@
 			$(".InfoBox1").addClass("InfoBoxAddColor")
 			$(".InfoBox2").addClass("InfoBoxAddColor")
 			$(".InfoBox2V2").addClass("InfoBoxAddColor")
+			$(".InfoBox2V3").addClass("InfoBoxAddColor")
 		},function(){
 			$(".MyBox").removeClass('MyBox2') 
 			$(".InfoBox1").removeClass("InfoBoxAddColor")
 			$(".InfoBox2").removeClass("InfoBoxAddColor")
 			$(".InfoBox2V2").removeClass("InfoBoxAddColor")
+			$(".InfoBox2V3").removeClass("InfoBoxAddColor")
 		})
 	});
 
