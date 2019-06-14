@@ -220,14 +220,14 @@ select {width: 100px; font-size: 15px;}
     position:absolute;    
     right:0%;
     width:30%;
-    height: 62%;
+    height: auto;
     font-size: 18px;
     background-color: #73725A;
     color:white;
     transition: 0.8s ease;
-    border-radius: 0px 0px 0px 30px;
-}
+    border-radius: 0px 0px 0px 30px;    
 
+}
 
 #textHere {
     display:flex;
@@ -320,6 +320,7 @@ li.b {color:#D7D152;}
 .InfoBox2V2:hover{background-color:#454d22;}
 .InfoBox2V3:hover{background-color:#454d22;}
 .Hidden1{display:none;}
+.GiveMoreHeight{height:62%;}
 
 .Hidden-Style {
     position:absolute;  

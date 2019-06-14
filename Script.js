@@ -107,14 +107,15 @@
 			$("#flip").show();
 		});
 	});
-	$(document).ready(function(){
-	
-	$('.Valikoima').hover(function(){	
-		$(".Hidden1").addClass("Hidden-Style");		
-		$(".Hidden1").show(300);				
-	},function(){
-		$(".Hidden1").removeClass("Hidden-Style");	
-		$(".Hidden1").hide();		
-	})
+	$(document).ready(function(){	
+		$('.Valikoima').hover(function(){	
+			$(".Hidden1").addClass("Hidden-Style");				
+			$('.InfoBox2V3').addClass('GiveMoreHeight');
+			$(".Hidden1").show(300);				
+		},function(){
+			$(".Hidden1").removeClass("Hidden-Style");	
+			$(".InfoBox2V3").removeClass("GiveMoreHeight");
+			$(".Hidden1").hide();		
+		})
 	});		
 	
