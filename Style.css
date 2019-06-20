@@ -184,6 +184,7 @@ select {width: 100px; font-size: 15px;}
     font-size: 18px;  
     transition: 0.8s ease;
     border-radius: 0px 0px 30px 0px;
+    overflow: hidden;
 }
 .InfoBox2{
     display: flex;
@@ -198,6 +199,7 @@ select {width: 100px; font-size: 15px;}
     color:white;
     transition: 0.8s ease;
     border-radius: 0px 0px 0px 30px; 
+    overflow: hidden;
 }
 .InfoBox2V2{
     display: flex;
@@ -212,6 +214,7 @@ select {width: 100px; font-size: 15px;}
     color:white;
     transition: 0.8s ease;
     border-radius: 0px 0px 0px 30px;
+    overflow: hidden;
 }
 .InfoBox2V3{
     display: flex;
@@ -225,8 +228,8 @@ select {width: 100px; font-size: 15px;}
     background-color: #73725A;
     color:white;
     transition: 0.8s ease;
-    border-radius: 0px 0px 0px 30px;    
-
+    border-radius: 0px 0px 0px 30px;  
+    overflow: hidden;
 }
 
 #textHere {
@@ -244,7 +247,8 @@ select {width: 100px; font-size: 15px;}
     align-items: center;
     justify-content: center;
     width: 90%;   
-    height:70%;   
+    height:auto;   
+    /*border:2px solid white; test only*/
 }
 #BoxInsideDiv1V2 {
     display: flex;
@@ -252,9 +256,8 @@ select {width: 100px; font-size: 15px;}
     align-items: center;
     justify-content: flex-start;
     width: 90%;   
-    height:70%;   
+    height:70%;  
 }
-
 
 #KyselyLomake{
     position:fixed;
