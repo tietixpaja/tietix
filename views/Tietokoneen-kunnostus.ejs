@@ -1,0 +1,71 @@
+<!--
+   Tietokoneen kunnostus.html
+
+   Copyright 2019 tietix <tietix@tietix-5>
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+
+
+-->
+<!DOCTYPE html>
+  <head>
+    <title>Tietokoneen kunnostus</title>
+  <% include Include/Head.ejs %>
+  </head>
+   <body>
+      <div class="addFlex">
+         <h1>Tietokoneen kunnostus</h1>
+      </div>
+     <img class="tausta" src="NodeFiles/Files/Huone1.jpg" alt="">
+      <div class="FlexMe">
+				<div id="flip">
+               <h1 id="tul">TIETIX</h1>
+               <div id="panel">
+                 <% include Include/nav.ejs %>
+               </div>
+            </div>
+            <div class="InfoBox1">
+               <h1 id="FontH1">Tietokoneen luovutus</h1>
+               <hr class="line">
+               <div id="BoxInsideDiv1">
+                  <p class="b">Huom: luovutamme tietokoneita keskiviikkona ja perjantaina klo 12-15</p>
+                  <p>Tietokoneiden luovuttamiseen
+                     <a id="TietokoneLomake">paina tästä</a>
+                  </p>
+
+               </div>
+            </div>
+
+            <div class="InfoBox2">
+               <h1 id="FontH1">Info</h1>
+                  <hr class="line">
+                  <div id="BoxInsideDiv1">
+                     <p>Tietokonepaja vastaanottaa tietokoneita ja USB-hiiriä</p>
+                        <ul>
+                           <li>maanantaista perjantaihin klo 9–15</li>
+                        </ul>
+                        <p>Jos lahjoitettavia tietokoneita on useita, voimme sopia noudosta kuljetuspajan kanssa.</p>
+                        <p class="b">Huom: emme vastaanota vanhoja XP- tai Windows-Vista-koneita, tulostimia ja putkinäyttöjä.</p>
+                  </div>
+            </div>
+
+            <div id="LuovutusLomake">
+                  <iframe id="FullScreen" src="https://sites.google.com/site/tietixpaja/luovutukset" frameBorder="0"></iframe>
+                  <button id="Close-Iframe-Lomake">Close</button>
+            </div>
+      </div>
+   </body>
+</html>

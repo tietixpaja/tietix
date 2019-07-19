@@ -8,6 +8,6 @@ document.addEventListener('keydown', (e) => {
 
 function activate() {
  /* document.getElementById("secret").classList.add('SecretCode');*/
-  document.getElementsByClassName('tausta')[0].src='./Files/ulko3.jpg'
+  document.getElementsByClassName('tausta')[0].src='./NodeFiles/Files/ulko3.jpg'
   document.getElementById("flip").style.opacity = "0.8";
 }

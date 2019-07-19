@@ -25,24 +25,19 @@
 <html>
 	<head>
 		<title>Pajalaisten töitä</title>
-		<link rel="stylesheet" type="text/css" href="../Style.css">
-		<script type="text/javascript" src="../Script.js"></script>
-	</head>
+  <% include Include/Head.ejs %>
+</head>
 
 	<body>
 		    <div class="addFlex">
 					<h1>Pajalaisten töitä</h1>
 				 </div>
-			<img class="tausta" src="../Files/Ohjelmointi.png" alt="">
+			<img class="tausta" src="NodeFiles/Files/Ohjelmointi.png" alt="">
 			<div id="flip">
 				<h1 id="tul">TIETIX</h1>
-				<div id="panel">
-					<a href="../index.html">Pääsivu</a>
-					<a href="Tietokoneen kunnostus.html">Tietokoneen kunnostus</a>
-					<a href="Tietix-pajalaisten_töitä.html">Pajalaisten töitä</a>
-					<a href="Keittiön toimintaa.html">Keittiön toimintaa</a>
-					<a href="Yhteystiedot.html">Yhteystiedot</a>
-				</div>
+        <div id="panel">
+          <% include Include/nav.ejs %>
+        </div>
 			</div>
 			<div class="InfoBox1">
 				<h1 id="FontH1">Tietix-pajalla opetellaan</h1>
@@ -54,7 +49,7 @@
 							<li>CSS-FlexBox</li>
 							<li>JAVASCRIPT</li>
 							<li>JQUERY</li>
-            	<li>NODE</li>
+							<li>NODE</li>
 							<li>PYTHON</li>
 							<li>GIT</li>
 						</ul>
