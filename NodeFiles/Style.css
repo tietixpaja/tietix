@@ -39,7 +39,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    margin:-8px -8px 0px -8px;  
+    margin:-8px -8px 0px -8px;
 }
 
 .RantalaText {
@@ -213,7 +213,17 @@ a:hover {
     border-radius: 25px;
     background-color: black;
 }
-
+#BoxInsideDivAddData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height:auto;
+    background-color: #454d22;
+    padding:25px;
+    border-radius: 25px;
+}
 #KyselyLomake{
     position:fixed;
     display: none;
@@ -308,6 +318,51 @@ h2 {padding-top:5%;text-align:center;}
 
 
 }
+.InfoTaulukko{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    left:0%;
+    width:30%;
+    height: 80%;
+    background-color: #73725A;
+    color:white;
+    font-size: 18px;
+    transition: 0.8s ease;
+    border-radius: 0px 0px 30px 0px;
+    overflow: hidden;
+}
+.InfoTaulukkoRight{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    left:70%;
+    width:30%;
+    height: 80%;
+    background-color: #73725A;
+    color:white;
+    font-size: 18px;
+    transition: 0.8s ease;
+    border-radius: 0px 0px 0px 30px;
+    overflow: hidden;
+}
+.inLine{display: inline;}
+
+.Class101 {
+  background-color: black;
+  color:white;
+  border-radius: 25px;
+  border:none;
+  font-size: 25px;
+}
+.Class101:hover{font-size: 27px;color:yellow;}
+.NumberInputID {font-size: 20px;width:auto;}
+.NumberInput {font-size: 20px;width:20%;}
+input[type="number"] {-moz-appearance: textfield;}
+.TotalValue{width:20%;font-size: 20px}
+.OptionForChoise{width:auto;}
 /* Koodi joka ei käytetään enää
 
 #panel{

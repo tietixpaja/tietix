@@ -107,3 +107,22 @@
 			$("#flip").show();
 		});
 	});
+	$(document).ready(function(){
+		$('.input-range').on('input', function() {
+	  $(this).next('.range-value').html(this.value);
+		});
+	});
+
+	$(document).on("change", ".count", function() {
+	    var sum = 0;
+	    $(".count").each(function(){
+	        sum *= +$(this).val();
+	    });
+	    $(".total").val(sum);
+	});
+
+	$(document).ready(function(){
+		$(".count1,.count2").keyup(function () {
+    $('.TotalValue').val($('.count1').val() * $('.count2').val());
+		});
+	});
